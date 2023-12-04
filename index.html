@@ -20,7 +20,9 @@
               <p style="text-align:center">
                 <name>Chenhao Li</name>
               </p>
-              <p>Hi! I am a Ph.D. student in <a href="https://www.is.ids.osaka-u.ac.jp/">IS Lab</a> of <a href="https://www.osaka-u.ac.jp/en">Osaka University</a> supervised by Prof. <a href="https://www.is.ids.osaka-u.ac.jp/author/hajime-nagahara/">Hajime Nagahara</a>. My research interests are computer vision, computational imaging, and computer graphics. I'm currently doing my research internship at <a href="https://www.sony-semicon.com/en/index.html">Sony Semiconductor Solutions Group</a>.
+              <p>Hi! I am a Ph.D. student in <a href="https://www.is.ids.osaka-u.ac.jp/">IS Lab</a> of <a href="https://www.osaka-u.ac.jp/en">Osaka University</a> supervised by Prof. <a href="https://www.is.ids.osaka-u.ac.jp/author/hajime-nagahara/">Hajime Nagahara</a>.
+                 I was a research intern at <a href="https://www.sony-semicon.com/en/index.html">Sony Semiconductor Solutions Group</a>. 
+                 My research interests are computer vision, computational imaging, and computer graphics. 
               </p>
 
               <p style="text-align:center">
@@ -40,14 +42,60 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision, computational photography, sensing, and computer graphics. Most of my research is about estimating the physical world (shape, materials, illumination, etc.) using sensing devices.
+                I'm interested in computer vision, computational photography, and computer graphics.
+                Most of my research is about estimating the physical world (shape, materials, illumination, etc.) using various types of sensing devices.
+                Representative papers are <span class="highlight">highlighted</span>.
               </p>
             </td>
           </tr>
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
+          <tr onmouseout="neisf_stop()" onmouseover="neisf_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='neisf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/neisf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/neisf_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function neisf_start() {
+                  document.getElementById('neisf_image').style.opacity = "1";
+                }
+    
+                function neisf_stop() {
+                  document.getElementById('neisf_image').style.opacity = "0";
+                }
+                neisf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2311.13187">
+                <span class="papertitle">NeISF: Neural Incident Stokes Field for Geometry and Material Estimation</span>
+              </a>
+              <br>
+              <strong>Chenhao Li</strong>,
+              <a href="">Taishi Ono</a>,
+              <a href="">Takeshi Uemori</a>,
+              <a href="">Hajime Mihara</a>,
+              <a href="">Alexander Gatto</a>,
+              <a href="">Hajime Nagahara</a>,
+              <a href="">Yusuke Moriuchi</a>
+              <br>
+              <em>arXiv</em>, 2023
+              <br>
+              <a href="">project page</a>/
+              <a href="">video</a>/
+              <a href="https://arxiv.org/abs/2311.13187">arXiv</a>/
+              <a href="">code & data</a>
+              <p></p>
+              <p>
+              An inverse rendering pipeline using a combination of explicit-implicit polarimetric lighting representations and a physically-based polarimetric renderer.
+              </p>
+            </td>
+          </tr>
         <tr onmouseout="translucent_stop()" onmouseover="translucent_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
