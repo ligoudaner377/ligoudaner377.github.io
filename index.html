@@ -52,6 +52,47 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="pol_translucent_stop()" onmouseover="pol_translucent_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pol_translucent_image'>
+                  <img src='images/pol_translucent_after.png' width="160"></div>
+                <img src='images/pol_translucent_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function pol_translucent_start() {
+                  document.getElementById('pol_translucent_image').style.opacity = "1";
+                }
+
+                function pol_translucent_stop() {
+                  document.getElementById('pol_translucent_image').style.opacity = "0";
+                }
+                pol_translucent_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Li_Inverse_Rendering_of_Translucent_Objects_Using_Physical_and_Neural_Renderers_CVPR_2023_paper.html">
+                <papertitle>Deep Polarization Cues for Single-shot Shape and Subsurface Scattering Estimation</papertitle>
+              </a>
+              <br>
+
+              <strong>Chenhao Li</strong>,
+              <a href="http://www.am.sanken.osaka-u.ac.jp/~trung/">Trung Thanh Ngo</a>,
+              <a href="https://www.is.ids.osaka-u.ac.jp/en/authors/hajime-nagahara/">Hajime Nagahara</a>
+              <br>
+							<em>ECCV</em>, 2024
+              <br>
+              <a href="">video</a> /
+              <a href="">arXiv</a> /
+              <a href="">code & data</a>
+              <p></p>
+              <p>
+              Joint estimation of shape and subsurface scattering parameters from a single polarized image.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="neisf_stop()" onmouseover="neisf_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -97,6 +138,7 @@
               </p>
             </td>
           </tr>
+
         <tr onmouseout="translucent_stop()" onmouseover="translucent_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
