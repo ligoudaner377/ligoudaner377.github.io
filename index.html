@@ -53,6 +53,51 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="neisfpp_stop()" onmouseover="neisfpp_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='neisfpp_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/neisfpp_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/neisfpp_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function neisfpp_start() {
+                  document.getElementById('neisfpp_image').style.opacity = "1";
+                }
+    
+                function neisfpp_stop() {
+                  document.getElementById('neisfpp_image').style.opacity = "0";
+                }
+                neisfpp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2411.10189">
+                <span class="papertitle">NeISF++: Neural Incident Stokes Field for Polarized Inverse Rendering of Conductors and Dielectrics</span>
+              </a>
+              <br>
+              <strong>Chenhao Li</strong>,
+              <a href="https://openreview.net/profile?id=~Taishi_Ono1">Taishi Ono</a>,
+              <a href="https://openreview.net/profile?id=~Takeshi_Uemori1">Takeshi Uemori</a>,
+              <a href="https://www.linkedin.com/in/hajimemihara/">Hajime Mihara</a>,
+              <a href="https://openreview.net/profile?id=~Sho_Nitta1">Sho Nitta</a>,
+              <a href="https://openreview.net/profile?id=~Alexander_Gatto2">Alexander Gatto</a>,
+              <a href="https://www.is.ids.osaka-u.ac.jp/en/authors/hajime-nagahara/">Hajime Nagahara</a>,
+              <a href="https://openreview.net/profile?id=~Yusuke_Moriuchi1">Yusuke Moriuchi</a>
+              <br>
+              <em></em>
+              <br>
+              <a href="https://arxiv.org/abs/2411.10189">arXiv</a>/
+              <a href="">code & data</a>
+              <p></p>
+              <p>
+              An inverse rendering pipeline using polarization cues that supports both conductors and dielectrics.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="pol_translucent_stop()" onmouseover="pol_translucent_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
